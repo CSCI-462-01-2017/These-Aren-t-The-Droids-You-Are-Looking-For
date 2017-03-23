@@ -547,9 +547,6 @@ static int move_tux_towards_raw_position(float x, float y)
 
 	if (Me.running_power <= 0) {
 		Me.running_must_rest = TRUE;
-	}
-
-	if (Me.running_must_rest) {
 		GameConfig.autorun_activated = 0;
 		planned_step.x = RemainingWay.x * TUX_WALKING_SPEED / length;
 		planned_step.y = RemainingWay.y * TUX_WALKING_SPEED / length;
